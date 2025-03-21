@@ -1,5 +1,18 @@
+@Author: Sal Bonadonna
+@ Course: Comp Org Spring25
+@ Date: 3/21/2025
+
 .global main
+
+.data
+.balign 4
+msg1: .asciz "Are you tired of the humdrum, ordinary life?"
+msg2: .asciz "Looking for a life of high adventure??"
+
+
 .text
+
+
 
 main:
     push {lr}           @ Save return address
@@ -24,7 +37,3 @@ end_if:
     pop {lr}            @ Restore return address
     bx lr               @ Return
 
-.data
-.balign 4
-msg1: .asciz "Are you tired of the humdrum, ordinary life?"
-msg2: .asciz "Looking for a life of high adventure??"
